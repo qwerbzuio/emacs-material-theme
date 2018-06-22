@@ -221,7 +221,8 @@
    `(highlight ((,class (:inverse-video nil :background ,current-line))))
    `(hl-line ((,class (:inverse-video nil :background ,current-line))))
    `(gui-element ((,class (:background ,current-line :foreground ,foreground))))
-   `(mode-line ((,class (:foreground ,foreground :background ,far-background))))
+   `(mode-line ((,class (:foreground ,foreground :background ,far-background
+                                     :box (:line-width 2 :color ,current-line)))))
    `(mode-line-buffer-id ((,class (:foreground ,foreground :background nil :weight bold))))
    `(mode-line-inactive ((,class (:inherit mode-line
                                            :foreground ,subtle
